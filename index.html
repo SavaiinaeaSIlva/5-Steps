@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional 5-Step Startup Guide</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #09090b;
+      background-image: radial-gradient(at 50% 10%, rgba(251,191,36,0.04) 0%, transparent 70%),
+                        radial-gradient(at 0% 100%, rgba(248,113,113,0.02) 0%, transparent 70%);
+    }
+    .active-nav {
+      background-color: #d97706 !important;
+      color: #fefce8 !important;
+      font-weight: 600;
+    }
+    .page-content { display: none; }
+    .page-content.active { display: block; }
+    .accordion-icon { transition: transform 0.3s; }
+    body::-webkit-scrollbar { width: 8px; }
+    body::-webkit-scrollbar-track { background: #18181b; }
+    body::-webkit-scrollbar-thumb {
+      background-color: #f59e0b;
+      border-radius: 10px;
+      border: 2px solid #18181b;
+    }
+    .accordion-header:focus { outline: 2px solid #f59e0b; }
+  </style>
+</head>
+<body class="bg-zinc-950 text-zinc-300">
+
+  <div class="flex min-h-screen">
+    <!-- Sidebar -->
+    <aside class="sticky top-0 h-screen w-64 bg-zinc-900/80 backdrop-blur-sm border-r border-zinc-800 shadow-md hidden lg:block p-4">
+      <h2 class="text-lg font-bold text-zinc-100 mb-6 px-2">Startup Roadmap</h2>
+      <nav aria-label="Main navigation" id="sidebar-nav">
+        <ul class="space-y-1">
+          <li><a href="#home" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">Home</a></li>
+          <li><a href="#introduction" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">Introduction</a></li>
+          <li><a href="#step1" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">Step 1: Find Niche</a></li>
+          <li><a href="#step2" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">Step 2: Research</a></li>
+          <li><a href="#step3" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">Step 3: Marketing</a></li>
+          <li><a href="#step4" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">Step 4: Competition</a></li>
+          <li><a href="#step5" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">Step 5: Just Do It</a></li>
+          <li><a href="#conclusion" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">Conclusion</a></li>
+          <li><a href="#about" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">About Me</a></li>
+          <li><a href="#contact" class="nav-link block py-2 px-4 rounded-md hover:bg-zinc-800 hover:text-white transition">Contact</a></li>
+        </ul>
+      </nav>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="w-full p-6 md:p-10 lg:p-12">
+      <div class="max-w-4xl mx-auto">
+
+        <!-- Home -->
+        <section id="home" class="page-content">
+          <div class="bg-gradient-to-br from-zinc-900 to-zinc-950 rounded-xl shadow-2xl p-8 md:p-12 border border-zinc-800 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-amber-400 mb-4 leading-tight tracking-tight">
+              The Entrepreneur's Essential 5-Step Startup Guide
+            </h1>
+            <p class="text-lg text-zinc-400 mt-4">Welcome. Use the navigation to explore the guide.</p>
+          </div>
+        </section>
+
+        <!-- Introduction -->
+        <section id="introduction" class="page-content">
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Introduction</h2>
+            <p class="mb-6">Starting a business can feel overwhelming, but success comes from following a proven framework. This guide outlines five essential steps to set you on the path to success. Explore each step to better understand key concepts.</p>
+            <div class="mt-4 p-4 bg-amber-950/50 border-l-4 border-amber-500 text-amber-200 rounded-r-lg">
+              <strong>Remember:</strong> every successful entrepreneur started exactly where you are now. The difference is a systematic approach and consistent action.
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 1 -->
+        <section id="step1" class="page-content">
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Step 1: Find Your Niche</h2>
+            <p class="mb-6">The foundation of any successful business is clarity about what you're offering and who you're serving. Your niche isn't just what you do—it's what you do better than anyone else for a specific group of people.</p>
+            <div class="space-y-3">
+              <!-- Accordion: Action Items -->
+              <div class="accordion-item bg-zinc-800/70 rounded-lg border border-zinc-700">
+                <button class="accordion-header flex justify-between items-center w-full p-4 cursor-pointer hover:bg-zinc-700/50 transition" aria-expanded="false">
+                  <span class="font-semibold text-white">Action Items</span>
+                  <svg class="accordion-icon w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content hidden p-4 pt-2 border-t border-zinc-700">
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>Write down 10 skills you have (include soft skills like listening, organizing).</li>
+                    <li>Ask 5 friends/family: "What do you always come to me for help with?"</li>
+                    <li>Spend 30 minutes browsing relevant Facebook groups to identify recurring problems.</li>
+                    <li>Offer to help 3 people for free to test your enjoyment and their perceived value.</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Accordion: Key Questions -->
+              <div class="accordion-item bg-zinc-800/70 rounded-lg border border-zinc-700">
+                <button class="accordion-header flex justify-between items-center w-full p-4 cursor-pointer hover:bg-zinc-700/50 transition" aria-expanded="false">
+                  <span class="font-semibold text-white">Key Questions to Ask Yourself</span>
+                  <svg class="accordion-icon w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content hidden p-4 pt-2 border-t border-zinc-700">
+                  <ul class="list-disc list-inside space-y-2">
+                    <li>What am I genuinely good at?</li>
+                    <li>What problems do people consistently come to me for help with?</li>
+                    <li>Where do my skills and market demand intersect?</li>
+                    <li>Can I clearly explain my offering in one sentence?</li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Accordion: Warning Signs -->
+              <div class="accordion-item bg-zinc-800/70 rounded-lg border border-zinc-700">
+                <button class="accordion-header flex justify-between items-center w-full p-4 cursor-pointer hover:bg-zinc-700/50 transition" aria-expanded="false">
+                  <span class="font-semibold text-red-400">Warning Signs</span>
+                  <svg class="accordion-icon w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+                </button>
+                <div class="accordion-content hidden p-4 pt-2 border-t border-zinc-700">
+                  <ul class="list-disc list-inside space-y-2 text-red-300">
+                    <li>Trying to serve everyone (which means serving no one well).</li>
+                    <li>Choosing a niche based solely on perceived profitability.</li>
+                    <li>Ignoring your natural strengths and interests.</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 2 -->
+        <section id="step2" class="page-content">
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Step 2: Do Your Research (Deep Dive)</h2>
+            <p class="mb-6">Many businesses fail because of underestimated costs. This step is about knowing your numbers inside and out before you launch. Explore the cost breakdowns to ensure you've covered all your bases.</p>
+            <div class="accordion-item bg-zinc-800/70 rounded-lg border border-zinc-700 mt-4">
+              <button class="accordion-header flex justify-between items-center w-full p-4 cursor-pointer hover:bg-zinc-700/50 transition" aria-expanded="false">
+                <span class="font-semibold text-white">Cost & Market Research Checklists</span>
+                <svg class="accordion-icon w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div class="accordion-content hidden p-4 pt-2 border-t border-zinc-700">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 class="font-semibold mb-2 text-white">Research All Costs</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                      <li><strong>Frontend:</strong> Equipment, inventory, licenses</li>
+                      <li><strong>Backend:</strong> Insurance, taxes, software</li>
+                      <li><strong>Hidden:</strong> Admin time, bookkeeping</li>
+                      <li><strong>Opportunity:</strong> What you're giving up</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold mb-2 text-white">Market Research</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                      <li>Size of your target market</li>
+                      <li>Customer purchasing behavior</li>
+                      <li>Seasonal fluctuations</li>
+                      <li>Economic factors</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 3 -->
+        <section id="step3" class="page-content">
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Step 3: Develop a Marketing Plan & Budget</h2>
+            <p class="mb-6">A great service means nothing if customers don't know it exists. Your marketing plan is the roadmap to finding and converting them. This section focuses on creating a smart, budget-conscious strategy.</p>
+            <div class="bg-zinc-800/70 rounded-lg border border-zinc-700 p-4 mb-4">
+              <h3 class="font-semibold text-white mb-3 text-lg">Real-World Example: Low-Cost Marketing</h3>
+              <div class="p-4 bg-zinc-900/50 border-l-4 border-amber-500 rounded-r-md">
+                <p>Sarah wanted to start a pet-sitting business. Instead of expensive ads, she:</p>
+                <ul class="list-decimal list-inside mt-2 space-y-1">
+                  <li>Posted helpful pet care tips on Instagram (Content Marketing).</li>
+                  <li>Joined local Facebook groups to answer pet questions (Networking).</li>
+                  <li>Asked her first 3 clients for referrals (Referral System).</li>
+                  <li>Partnered with a local dog walker (Partnerships).</li>
+                </ul>
+                <p class="mt-3 font-bold text-amber-300">Result: 20 regular clients in 3 months with $0 marketing spend.</p>
+              </div>
+            </div>
+            <div class="accordion-item bg-zinc-800/70 rounded-lg border border-zinc-700">
+              <button class="accordion-header flex justify-between items-center w-full p-4 cursor-pointer hover:bg-zinc-700/50 transition" aria-expanded="false">
+                <span class="font-semibold text-white">Strategy & Metrics</span>
+                <svg class="accordion-icon w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div class="accordion-content hidden p-4 pt-2 border-t border-zinc-700">
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  <div>
+                    <h3 class="font-semibold mb-2 text-white">Lead Generation Strategy</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                      <li>Identify where customers spend their time.</li>
+                      <li>Choose 2-3 marketing channels to focus on.</li>
+                      <li>Create valuable, expert content.</li>
+                      <li>Build systems for consistent outreach.</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <h3 class="font-semibold mb-2 text-white">Key Metrics to Monitor</h3>
+                    <ul class="list-disc list-inside space-y-2">
+                      <li>Cost per lead (CPL)</li>
+                      <li>Conversion rate (lead to customer)</li>
+                      <li>Customer lifetime value (LTV)</li>
+                      <li>Customer acquisition cost (CAC)</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 4 -->
+        <section id="step4" class="page-content">
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Step 4: Research Your Competition</h2>
+            <p class="mb-6">Understanding your competition isn't about copying; it's about finding your unique position and pricing strategically. The goal is to win about 70% of your proposals. This section provides the framework for analyzing competitors and positioning your business effectively.</p>
+            <div class="accordion-item bg-zinc-800/70 rounded-lg border border-zinc-700">
+              <button class="accordion-header flex justify-between items-center w-full p-4 cursor-pointer hover:bg-zinc-700/50 transition" aria-expanded="false">
+                <span class="font-semibold text-white">Competitive Analysis Framework</span>
+                <svg class="accordion-icon w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div class="accordion-content hidden p-4 pt-2 border-t border-zinc-700">
+                <ul class="list-disc list-inside space-y-2">
+                  <li><strong>Pricing Structures:</strong> What are their rates and packages?</li>
+                  <li><strong>Marketing Messages:</strong> How do they position themselves?</li>
+                  <li><strong>Customer Reviews:</strong> What do customers love or hate? Read them!</li>
+                  <li><strong>Service Gaps:</strong> What do they do well, and where do they fall short?</li>
+                  <li><strong>Simple Research:</strong> Google your service in your city. Call 3 competitors as a potential customer.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Step 5 -->
+        <section id="step5" class="page-content">
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Step 5: Just Do It</h2>
+            <p class="mb-6">All the planning in the world means nothing without action. The most successful entrepreneurs are those who start before they feel completely ready. This final step is about execution. Review the action plan and common excuses to push past any hesitation.</p>
+            <div class="bg-zinc-800/70 rounded-lg border border-zinc-700 p-4 mb-4">
+              <h3 class="font-semibold text-white mb-4 text-lg">First 30 Days Action Plan</h3>
+              <ol class="relative border-l border-zinc-700 ml-4">
+                <li class="mb-10 ml-6">
+                  <span class="absolute flex items-center justify-center w-8 h-8 bg-amber-600 rounded-full -left-4 ring-4 ring-zinc-800 text-white font-bold">1</span>
+                  <h4 class="font-semibold text-white">Week 1</h4>
+                  <p>Finalize your service offering and pricing.</p>
+                </li>
+                <li class="mb-10 ml-6">
+                  <span class="absolute flex items-center justify-center w-8 h-8 bg-amber-600 rounded-full -left-4 ring-4 ring-zinc-800 text-white font-bold">2</span>
+                  <h4 class="font-semibold text-white">Week 2</h4>
+                  <p>Set up basic business infrastructure (website, social media).</p>
+                </li>
+                <li class="mb-10 ml-6">
+                  <span class="absolute flex items-center justify-center w-8 h-8 bg-amber-600 rounded-full -left-4 ring-4 ring-zinc-800 text-white font-bold">3</span>
+                  <h4 class="font-semibold text-white">Week 3</h4>
+                  <p>Launch your first marketing campaign.</p>
+                </li>
+                <li class="ml-6">
+                  <span class="absolute flex items-center justify-center w-8 h-8 bg-amber-600 rounded-full -left-4 ring-4 ring-zinc-800 text-white font-bold">4</span>
+                  <h4 class="font-semibold text-white">Week 4</h4>
+                  <p>Follow up on leads and secure your first customer.</p>
+                </li>
+              </ol>
+            </div>
+            <div class="accordion-item bg-zinc-800/70 rounded-lg border border-zinc-700">
+              <button class="accordion-header flex justify-between items-center w-full p-4 cursor-pointer hover:bg-zinc-700/50 transition" aria-expanded="false">
+                <span class="font-semibold text-white">Common Excuses & Solutions</span>
+                <svg class="accordion-icon w-5 h-5 text-amber-400" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              </button>
+              <div class="accordion-content hidden p-4 pt-2 border-t border-zinc-700 space-y-3">
+                <p><strong class="text-red-500">"I need more money"</strong> → <span class="text-emerald-500">Start with what you have and bootstrap.</span></p>
+                <p><strong class="text-red-500">"I need more skills"</strong> → <span class="text-emerald-500">Learn as you go and outsource what you can't do.</span></p>
+                <p><strong class="text-red-500">"The timing isn't right"</strong> → <span class="text-emerald-500">There is never a perfect time.</span></p>
+                <p><strong class="text-red-500">"I need more experience"</strong> → <span class="text-emerald-500">Every expert was once a beginner.</span></p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Conclusion -->
+        <section id="conclusion" class="page-content">
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Conclusion: Your Next Steps</h2>
+            <p class="mb-6">Success in entrepreneurship isn't about having all the answers—it's about taking consistent, smart action. This guide provides the framework; your unique execution will determine your success. The world needs what you have to offer.</p>
+            <div class="bg-zinc-800/70 rounded-lg border border-zinc-700 p-4 mb-6">
+              <h3 class="font-semibold text-white mb-4 text-lg">Your Immediate Action Items</h3>
+              <ul class="list-disc list-inside space-y-2">
+                <li>Define your niche and unique value proposition.</li>
+                <li>Research all costs and create a financial model.</li>
+                <li>Choose your first marketing channel and create content.</li>
+                <li>Analyze 3-5 competitors and set your pricing.</li>
+                <li><strong class="text-amber-400">Set a launch date within the next 30 days.</strong></li>
+              </ul>
+            </div>
+            <blockquote class="text-center p-4 my-4 border-l-4 border-zinc-700 bg-zinc-900/50 text-zinc-400 italic">
+              "The way to get started is to quit talking and begin doing."
+              <cite class="block not-italic mt-2 font-semibold text-zinc-300">- Walt Disney</cite>
+            </blockquote>
+            <p class="text-center font-bold text-xl text-amber-400">Today is your day to begin.</p>
+          </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="page-content">
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Hi, I'm Savaiinaea Lemisio Silva</h2>
+            <p class="mb-4">At 31, I've learned that the path to true freedom isn't found in someone else's company—it's built by becoming your own boss. I'm passionate about helping people like you discover that entrepreneurship isn't just for the "chosen few"—it's for anyone willing to take the right steps.</p>
+            <p class="text-amber-400 font-semibold text-lg mb-4">My mission is simple: Help you transform your skills into income and your ideas into action.</p>
+            <h3 class="font-semibold text-white mb-2 text-lg">What I Help You With:</h3>
+            <ul class="list-disc list-inside space-y-2 mb-6">
+              <li>Discovering your profitable niche</li>
+              <li>Understanding the real costs of starting a business</li>
+              <li>Creating marketing strategies that don't break the bank</li>
+              <li>Positioning yourself competitively in your market</li>
+              <li>Taking action and overcoming the fear of starting</li>
+            </ul>
+            <p>I don't believe in get-rich-quick schemes. I believe in smart planning, hard work, and taking consistent action. If you're ready to invest in yourself and commit to the process, I'm ready to help you become your own boss.</p>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="page-content">
+          <div class="bg-zinc-900 border border-zinc-800 rounded-xl p-8">
+            <h2 class="text-3xl font-bold text-white mb-4">Let's Talk About Your Business Dreams</h2>
+            <p class="mb-6">I'm here to help you take the next step. Whether you have questions, need guidance, or want to discuss your specific situation, I'm just a phone call or email away.</p>
+            <form action="https://formspree.io/f/xqabvggj" method="POST" class="w-full max-w-lg space-y-4 mx-auto">
+              <div>
+                <label for="name" class="block text-zinc-300 text-sm font-bold mb-2">Name</label>
+                <input type="text" id="name" name="name" class="shadow-sm border border-zinc-700 rounded-lg w-full py-3 px-4 bg-zinc-800/70 text-white focus:ring-2 focus:ring-amber-500" placeholder="Your Name" required>
+              </div>
+              <div>
+                <label for="email" class="block text-zinc-300 text-sm font-bold mb-2">Email</label>
+                <input type="email" id="email" name="email" class="shadow-sm border border-zinc-700 rounded-lg w-full py-3 px-4 bg-zinc-800/70 text-white focus:ring-2 focus:ring-amber-500" placeholder="your@example.com" required>
+              </div>
+              <div>
+                <label for="message" class="block text-zinc-300 text-sm font-bold mb-2">Message</label>
+                <textarea id="message" name="message" rows="4" class="shadow-sm border border-zinc-700 rounded-lg w-full py-3 px-4 bg-zinc-800/70 text-white focus:ring-2 focus:ring-amber-500 resize-y" placeholder="Your message..." required></textarea>
+              </div>
+              <div class="flex items-center justify-end">
+                <button type="submit" class="bg-amber-600 hover:bg-amber-700 text-white font-bold py-2 px-6 rounded-full focus:ring-2 focus:ring-offset-2 focus:ring-offset-zinc-900 focus:ring-amber-500 transition">
+                  Send Message
+                </button>
+              </div>
+            </form>
+          </div>
+        </section>
+
+      </div>
+    </main>
+  </div>
+
+  <script>
+    // Navigation and page switching
+    document.addEventListener('DOMContentLoaded', () => {
+      const pageContents = document.querySelectorAll('.page-content');
+      const navLinks = document.querySelectorAll('.nav-link');
+
+      function showPage(pageId) {
+        pageContents.forEach(page => page.classList.remove('active'));
+        const target = document.getElementById(pageId);
+        if (target) target.classList.add('active');
+        navLinks.forEach(link => {
+          link.classList.remove('active-nav');
+          link.removeAttribute('aria-current');
+          if (link.getAttribute('href') === `#${pageId}`) {
+            link.classList.add('active-nav');
+            link.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      function handleNavigation() {
+        const pageId = window.location.hash.substring(1) || 'home';
+        showPage(pageId);
+      }
+
+      navLinks.forEach(link => {
+        link.addEventListener('click', e => {
+          e.preventDefault();
+          const pageId = link.getAttribute('href').substring(1);
+          window.location.hash = pageId;
+        });
+      });
+
+      window.addEventListener('hashchange', handleNavigation);
+      handleNavigation();
+
+      // Accordion functionality
+      document.querySelectorAll('.accordion-item').forEach(item => {
+        const header = item.querySelector('.accordion-header');
+        const content = item.querySelector('.accordion-content');
+        const icon = header.querySelector('.accordion-icon');
+        header.addEventListener('click', () => {
+          const expanded = header.getAttribute('aria-expanded') === 'true';
+          header.setAttribute('aria-expanded', !expanded);
+          content.classList.toggle('hidden');
+          icon.classList.toggle('rotate-180');
+        });
+        header.addEventListener('keydown', e => {
+          if (e.key === 'Enter' || e.key === ' ') header.click();
+        });
+        header.setAttribute('tabindex', '0');
+      });
+    });
+  </script>
+</body>
+</html>
